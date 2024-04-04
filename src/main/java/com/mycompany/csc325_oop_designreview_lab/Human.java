@@ -20,10 +20,12 @@ public abstract class Human {
 	}
 
 	public String getName() {
+
 		return name;
 	}
 
 	public void setName(String name) {
+
 		this.name = name;
 	}
 
@@ -33,10 +35,12 @@ public abstract class Human {
 
 
 	public short getAge() {
+
 		return age;
 	}
 
 	public void setAge(short age) {
+
 		this.age = age;
 	}
 }

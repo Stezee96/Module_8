@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.csc325_oop_designreview_lab;
+
+import java.util.Scanner; // Import Scanner
 
 /**
  *
@@ -11,30 +9,41 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class MainClass {
 
  public static void main(String[] args) {
-		// ToDo 5: Fix the error
+	 Scanner scanner = new Scanner(System.in);
 
-		// ToDo 6: Fix the constructor of the Student class
+	 // ToDo 5: Fix the error
 
-                // Todo 7: Create two classes for Freshman and Senior 
+	 // ToDo 6: Fix the constructor of the Student class
+	 //done
 
-                // ToDo 8: The senior class should have a minimum of 85 credits  
+	 // Todo 7: Create two classes for Freshman and Senior
+	 //done
 
-		// ToDo 9: Add a toString method for the Student class
-		// ToDo 10: Add a toString method for the Freshman class
+	 // ToDo 8: The senior class should have a minimum of 85 credits
+	 //done
 
-		Student std1= new Student("James", 20);
-                // ToDo 11: Add a toString method for the Senior class
+	 // ToDo 9: Add a toString method for the Student class
+	 //on student class
 
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
+	 // ToDo 10: Add a toString method for the Freshman class
 
-                Senior std2 = new Student("John", 30, 90);
+	 Student std1 = new Student("James", (short) 20, (short) 0);
 
-		// ToDo 12: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
+	 // ToDo 11: Add a toString method for the Senior class
+
+	 Freshman fresh = new Freshman("James", (short) 20, (short) 12); //changed std1 to fresh as it's used.
+
+	 Senior senior1 = new Senior("John", (short) 30, (short) 90);
+
+	 // ToDo 12: Set the gpa of the student using the scanner and user
+	 //done
+	 // 	input and then print the output.
+	 System.out.println("Student GPA is 3.8:");
+	 double gpa1 = scanner.nextDouble();
+	 std1.setGpa(gpa1);
 
 		System.out.println(std1);
-
-                System.out.println(std2);
+	 	System.out.println(senior1);
 
 		// ToDo 13: add comments and explain your code
 
